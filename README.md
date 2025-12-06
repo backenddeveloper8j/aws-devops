@@ -26,7 +26,9 @@ A **production-ready, fully automated CI/CD pipeline** built on AWS using Terraf
 - [Contributing](#-contributing)
 - [License](#-license)
 
-## 🎯 Overview
+---
+
+## Overview
 
 This project demonstrates a **complete AWS DevOps pipeline** that automatically builds, tests, and deploys a Node.js application to ECS Fargate whenever code is pushed to GitHub. Everything is provisioned using Infrastructure as Code (Terraform) following AWS best practices.
 
@@ -34,7 +36,9 @@ This project demonstrates a **complete AWS DevOps pipeline** that automatically 
 - **Application URL**: Provided after `terraform apply` completes
 - **CodePipeline Console**: `https://console.aws.amazon.com/codesuite/codepipeline/pipelines/aws-devops-pipeline/view`
 
-## 🏗️ Architecture
+---
+
+## Architecture
 
 ```
 ┌─────────────┐      ┌──────────────┐      ┌─────────────┐      ┌──────────────┐
@@ -64,7 +68,9 @@ This project demonstrates a **complete AWS DevOps pipeline** that automatically 
 - **CodeBuild**: Docker image building
 - **CloudWatch**: Centralized logging and monitoring
 
-## ✨ Features
+---
+
+## Features
 
 ### Infrastructure
 - ✅ **Multi-AZ Deployment** - High availability across availability zones
@@ -94,7 +100,9 @@ This project demonstrates a **complete AWS DevOps pipeline** that automatically 
 - ✅ **Non-root Containers** - Enhanced container security
 - ✅ **Secrets Management** - GitHub token via Terraform variables
 
-## 📦 Prerequisites
+---
+
+## Prerequisites
 
 ### Required Tools
 - **AWS CLI** (v2.x) - [Install Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
@@ -116,7 +124,9 @@ This project demonstrates a **complete AWS DevOps pipeline** that automatically 
 - **CodeBuild**: Free tier (100 build minutes/month)
 - **Total**: ~$85-105/month
 
-## 🚀 Quick Start
+---
+
+## Quick Start
 
 ### 1. Clone the Repository
 
@@ -174,7 +184,7 @@ terraform plan
 terraform apply --auto-approve
 ```
 
-**⏱️ Deployment takes ~5-10 minutes**
+**Deployment takes ~5-10 minutes**
 
 ### 6. Access Your Application
 
@@ -190,7 +200,9 @@ ecr_repository_url = "xxxxx.dkr.ecr.us-east-1.amazonaws.com/aws-devops-app"
 
 Visit the `alb_url` to see your application! 🎉
 
-## 📁 Project Structure
+---
+
+## Project Structure
 
 ```
 aws-devops/
@@ -252,7 +264,9 @@ docker run -p 3000:3000 aws-devops-app
 # Access at http://localhost:3000
 ```
 
-## 🔄 CI/CD Pipeline
+---
+
+## CI/CD Pipeline
 
 ### Pipeline Stages
 
@@ -287,7 +301,7 @@ git push origin main
 # Pipeline automatically triggers!
 ```
 
-### 📊 Monitoring & Logging
+### Monitoring & Logging
 
 #### CloudWatch Log Groups
 - Go to CloudWatch Console:
@@ -296,7 +310,7 @@ git push origin main
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -307,13 +321,13 @@ Contributions are welcome! Please follow these steps:
 5. Open a Pull Request
 
 ---
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - AWS for comprehensive cloud services
 - HashiCorp for Terraform
