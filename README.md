@@ -8,7 +8,7 @@
 
 A **production-ready, fully automated CI/CD pipeline** built on AWS using Terraform, featuring containerized deployment with ECS Fargate, automated builds with CodePipeline, and a modern responsive web interface.
 
-![application](screenshots/1.png)\
+![application](screenshots/1.png)
 
 ## Table of Contents
 
